@@ -1,5 +1,9 @@
 # fake-news-thumbnail
 
+How does fake news use a thumbnail? CLIP-based Multimodal Detection on the Unrepresentative News Image, Published in Findings of ACL workshop, CONSTRAINT 2022, [paper](https://arxiv.org/abs/2204.05533)
+
+## Requirements
+
 working..
 
 ## Train
