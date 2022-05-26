@@ -28,7 +28,7 @@ python train.py --image_path image \
 ## Reference
 
 All research outcomes (problem, model, and data) are presented as the ACL-22 workshop paper with the oral presentation at CONSTRAINT 2022. 
-You are free to use our code and dataset, but please don't forget to cite our work if you publish an academic paper based on that. 
+You are free to use our code and dataset, but please don't forget to cite our [work](https://arxiv.org/abs/2204.05533) if you publish an academic paper based on that. 
 
 ```bibtex
 @inproceedings{choi-etal-2022-fake,
