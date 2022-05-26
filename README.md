@@ -1,4 +1,4 @@
-# Multimodal detection on the unrepresentative news thumbnail
+# Unrepresentative news thumbnail detection
 
 ## Task
 
