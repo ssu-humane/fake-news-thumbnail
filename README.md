@@ -1,4 +1,4 @@
-# How does fake news use a thumbnail? CLIP-based Multimodal Detection on the Unrepresentative News Image
+# Multimodal detection on the unrepresentative news thumbnail
 
 ## Task
 
