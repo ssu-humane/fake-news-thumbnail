@@ -7,10 +7,9 @@ The ground truth label is binary, indicating whether *I* represents *T* or not.
 
 ## Evaluation data
 
-We obtained 259 news title-image pairs, of which label is manually annotated. We selected the annotated news articles by the prediction rank of [CLIP](https://openai.com/blog/clip/)-based models. Please refer to our [paper](https://arxiv.org/abs/2204.05533) for more detailed procedures.
-We only provide news and image URLs with annotated labels for copyright issues. To obtain the original data, we recommend using [NewsPaper3k](https://newspaper.readthedocs.io/en/latest/), an open-sourced Python library.
+We obtained 259 news title-image pairs, of which label is manually annotated. We selected the annotated news articles by the prediction rank of [CLIP](https://openai.com/blog/clip/)-based models. We only provide news and image URLs with annotated labels for copyright issues. To obtain the original data, we recommend using [NewsPaper3k](https://newspaper.readthedocs.io/en/latest/), an open-sourced Python library.
 
-This dataset was originally prepared for our task, but we think it could be further utilized for evaluation of models designed for vision-and-language tasks, such as image captioning, etc.
+This dataset was originally prepared for our task, but we think it could be further utilized for evaluation of models designed for vision-and-language tasks, such as image captioning, etc. Please refer to our [paper](https://arxiv.org/abs/2204.05533) for more detailed procedures on data selection and annotation.
 
 ## A baseline model
 
