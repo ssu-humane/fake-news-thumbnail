@@ -1,11 +1,19 @@
 # How does fake news use a thumbnail? CLIP-based Multimodal Detection on the Unrepresentative News Image
 
-**How does fake news use a thumbnail? CLIP-based Multimodal Detection on the Unrepresentative News Image**, Published in Findings of ACL workshop, CONSTRAINT 2022, [paper](https://arxiv.org/abs/2204.05533)
+## Task
 
-## 설명
-+ fakenews_annotation.csv: 논문에서 사용한 두 개의 모델이 COVID-wo-faces 데이터셋의 가짜 뉴스 샘플에 대해 fakenews라고 예측한 기사들을 라벨링한 결과입니다. 라벨 1은 썸네일이 기사 제목을 잘 대표하지 않는 기사, 라벨 0은 썸네일이 기사 제목을 잘 대표하는 기사입니다.
+Given a news title *T* and thumbnail image *I*, we want to detect news articles with unrepresentative thumbnail I.
+The ground truth label is binary, indicating whether *I* represents *T* or not.
 
-## Train
+## Evaluation data
+
+We obtained 259 news title-image pairs, of which label is manually annotated. We selected the annotated news articles by the prediction rank of [CLIP](https://openai.com/blog/clip/)-based models. Please refer to our [paper](https://arxiv.org/abs/2204.05533) for more detailed procedures.
+We only provide news and image URLs with annotated labels for copyright issues. To obtain the original data, we recommend using [NewsPaper3k](https://newspaper.readthedocs.io/en/latest/), an open-sourced Python library.
+
+## A baseline model
+
+We implemented a baseline model that predicts the binary label on the thumbnail representativeness from the CLIP text and visual embeddings. You can train the model by using the command below.
+
 ```python
 python train.py --image_path image \
                 --train_path . \
@@ -15,3 +23,28 @@ python train.py --image_path image \
                 --num_epochs 10 \
                 --save model_pt 
 ```
+
+## Reference
+
+All research outcomes (problem, model, and data) are presented as the ACL-22 workshop paper with the oral presentation at the CONSTRAINT 2022 workshop. 
+You are free to use our code and dataset, but please don't forget to cite our work if you publish an academic paper based on that. 
+
+Please cite our work if you publish 
+
+```bibtex
+@inproceedings{choi-etal-2022-fake,
+    title = "How does fake news use a thumbnail? {CLIP}-based Multimodal Detection on the Unrepresentative News Image",
+    author = "Choi, Hyewon  and
+      Yoon, Yejun  and
+      Yoon, Seunghyun  and
+      Park, Kunwoo",
+    booktitle = "Proceedings of the Workshop on Combating Online Hostile Posts in Regional Languages during Emergency Situations",
+    month = may,
+    year = "2022",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.constraint-1.10",
+    pages = "86--94"
+}
+```
+
+
