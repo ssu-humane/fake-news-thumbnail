@@ -26,7 +26,7 @@ python train.py --image_path image \
 
 ## Reference
 
-All research outcomes (problem, model, and data) are presented as the ACL-22 workshop paper with the oral presentation at the CONSTRAINT 2022 workshop. 
+All research outcomes (problem, model, and data) are presented as the ACL-22 workshop paper with the oral presentation at CONSTRAINT 2022. 
 You are free to use our code and dataset, but please don't forget to cite our work if you publish an academic paper based on that. 
 
 ```bibtex
