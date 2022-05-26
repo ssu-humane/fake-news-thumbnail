@@ -12,7 +12,7 @@ We only provide news and image URLs with annotated labels for copyright issues. 
 
 ## A baseline model
 
-We implemented a baseline model that predicts the binary label on the thumbnail representativeness from the CLIP text and visual embeddings. You can train the model by using the command below.
+We implemented a baseline model that predicts the binary label on the thumbnail representativeness from the CLIP text and visual embeddings. You can train the model by using the command below. We don't provide the training dataset but you can make your own training dataset using the proposed method. You can find the details of dataset creation in our [paper](https://arxiv.org/abs/2204.05533).
 
 ```python
 python train.py --image_path image \
