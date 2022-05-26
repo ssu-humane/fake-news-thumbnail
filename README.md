@@ -29,8 +29,6 @@ python train.py --image_path image \
 All research outcomes (problem, model, and data) are presented as the ACL-22 workshop paper with the oral presentation at the CONSTRAINT 2022 workshop. 
 You are free to use our code and dataset, but please don't forget to cite our work if you publish an academic paper based on that. 
 
-Please cite our work if you publish 
-
 ```bibtex
 @inproceedings{choi-etal-2022-fake,
     title = "How does fake news use a thumbnail? {CLIP}-based Multimodal Detection on the Unrepresentative News Image",
